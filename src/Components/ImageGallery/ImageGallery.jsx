@@ -16,6 +16,56 @@ SwiperCor.use([Navigation, A11y]);
 
 
 const ImageGallery = () => {
+    const array = [
+        {
+            image: image1
+        },
+        {
+            image: image2
+        },
+        {
+            image: image3
+        },
+        {
+            image: image4
+        },
+        {
+            image: image1
+        },
+        {
+            image: image2
+        },
+        {
+            image: image3
+        },
+        {
+            image: image4
+        },
+        {
+            image: image1
+        },
+        {
+            image: image2
+        },
+        {
+            image: image3
+        },
+        {
+            image: image4
+        },
+        {
+            image: image1
+        },
+        {
+            image: image2
+        },
+        {
+            image: image3
+        },
+        {
+            image: image4
+        },
+    ]
     return (
         <StyleWrapper>
             <div className='title-wrapper'>
@@ -66,7 +116,16 @@ const ImageGallery = () => {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide><img src={image1} alt='' /> </SwiperSlide>
+
+                    {
+                        array.map((item, index) => {
+                            return (
+                                <SwiperSlide><img src={item.image} alt='' /></SwiperSlide>
+                            )
+                        })
+                    }
+
+                    {/* <SwiperSlide><img src={image1} alt='' /> </SwiperSlide>
                     <SwiperSlide><img src={image2} alt='' /> </SwiperSlide>
                     <SwiperSlide><img src={image3} alt='' /> </SwiperSlide>
                     <SwiperSlide><img src={image4} alt='' /> </SwiperSlide>
@@ -76,15 +135,15 @@ const ImageGallery = () => {
                     <SwiperSlide><img src={image3} alt='' /> </SwiperSlide>
                     <SwiperSlide><img src={image4} alt='' /> </SwiperSlide>
 
-                    <SwiperSlide>< img src={image1} alt='' /> </SwiperSlide>
-                    <SwiperSlide>< img src={image2} alt='' /> </SwiperSlide>
-                    <SwiperSlide>< img src={image3} alt='' /> </SwiperSlide>
+                    <SwiperSlide><img src={image1} alt='' /> </SwiperSlide>
+                    <SwiperSlide><img src={image2} alt='' /> </SwiperSlide>
+                    <SwiperSlide><img src={image3} alt='' /> </SwiperSlide>
                     <SwiperSlide><img src={image4} alt='' /> </SwiperSlide>
 
                     <SwiperSlide><img src={image1} alt='' /> </SwiperSlide>
                     <SwiperSlide><img src={image2} alt='' /> </SwiperSlide>
                     <SwiperSlide><img src={image3} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image4} alt='' /> </SwiperSlide>
+                    <SwiperSlide><img src={image4} alt='' /> </SwiperSlide> */}
 
                 </Swiper>
             </div>

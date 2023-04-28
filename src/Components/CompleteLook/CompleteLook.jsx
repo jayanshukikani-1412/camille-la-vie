@@ -1,110 +1,89 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import img1 from '../../images/product/img1.png'
+import img2 from '../../images/product/img2.png'
+import img3 from '../../images/product/img3.png'
+import img4 from '../../images/product/img4.png'
+import CompleteLookProduct from './CompleteLookProduct'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCor, { Navigation, A11y } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-
-import image1 from "../../images/best-seller/image1.png"
-import image2 from "../../images/best-seller/image2.png"
-import image3 from "../../images/best-seller/image3.png"
-import image4 from "../../images/best-seller/image4.png"
-import BestSellerProduct from './BestSellerProduct';
-
 SwiperCor.use([Navigation, A11y]);
 
-
-const BestSeller = () => {
+const CompleteLook = () => {
     const product = [
         {
-            image: image1,
-            title: "3D Flower Embroidered CorsetBallgown",
-            price: "$279.99"
+            image: img1,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image2,
-            title: "Metallic Drape Back Ruched Front Dress",
-            price: "$279.99"
+            image: img2,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image3,
-            title: "Sweetheart Rhinestone Jersey Dress",
-            price: "$279.99"
+            image: img3,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image4,
-            title: "Deep V Sunburst Sequin Faux Wrap Dress",
-            price: "$279.99"
+            image: img4,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image1,
-            title: "3D Flower Embroidered CorsetBallgown",
-            price: "$279.99"
+            image: img1,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image2,
-            title: "Metallic Drape Back Ruched Front Dress",
-            price: "$279.99"
+            image: img2,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image3,
-            title: "Sweetheart Rhinestone Jersey Dress",
-            price: "$279.99"
+            image: img3,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image4,
-            title: "Deep V Sunburst Sequin Faux Wrap Dress",
-            price: "$279.99"
+            image: img4,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image1,
-            title: "3D Flower Embroidered CorsetBallgown",
-            price: "$279.99"
+            image: img1,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image2,
-            title: "Metallic Drape Back Ruched Front Dress",
-            price: "$279.99"
+            image: img2,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image3,
-            title: "Sweetheart Rhinestone Jersey Dress",
-            price: "$279.99"
+            image: img3,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
         {
-            image: image4,
-            title: "Deep V Sunburst Sequin Faux Wrap Dress",
-            price: "$279.99"
-        },
-        {
-            image: image1,
-            title: "3D Flower Embroidered CorsetBallgown",
-            price: "$279.99"
-        },
-        {
-            image: image2,
-            title: "Metallic Drape Back Ruched Front Dress",
-            price: "$279.99"
-        },
-        {
-            image: image3,
-            title: "Sweetheart Rhinestone Jersey Dress",
-            price: "$279.99"
-        },
-        {
-            image: image4,
-            title: "Deep V Sunburst Sequin Faux Wrap Dress",
-            price: "$279.99"
+            image: img4,
+            title: "Glitter Metallic Strappy Lace Up Back Dress",
+            price: "$69.99"
         },
     ]
+
     return (
         <StyleWrapper>
             <div className='title-wrapper'>
-                <h1>BEST SELLERS</h1>
+                <h3>COMPLETE THE LOOK</h3>
             </div>
-            <div className='bestSeller-wrapper'>
+            <div className='completelook-wrapper'>
                 <Swiper
                     spaceBetween={30}
                     slidesPerView={1}
@@ -148,15 +127,11 @@ const BestSeller = () => {
                     {
                         product.map((item, index) => {
                             return (
-                                <SwiperSlide key={index}><BestSellerProduct image={item.image} title={item.title} price={item.price} /> </SwiperSlide>
+                                <SwiperSlide key={index}><CompleteLookProduct image={item.image} title={item.title} price={item.price} /> </SwiperSlide>
                             )
                         })
                     }
-                    
                 </Swiper>
-            </div>
-            <div className='shopAll-btn-wrapper'>
-                <button>SHOP ALL PRODUCTS</button>
             </div>
         </StyleWrapper>
     )
@@ -180,7 +155,7 @@ padding: 0 40px;
         }
     }
 
-    .bestSeller-wrapper{
+    .completelook-wrapper{
         display: flex;
         justify-content: center;
 
@@ -212,33 +187,8 @@ padding: 0 40px;
         }
 
     }
-
-    .shopAll-btn-wrapper{
-        display: flex;
-        justify-content: center;
-        button{
-            margin-top: 60px;
-            margin-bottom: 80px;
-            padding: 20px 40px;
-            background: #000000;
-            border-radius: 3px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 20px;
-            letter-spacing: 0.05em;
-            color: #FFFFFF;
-            transition: all 0.3s;
-            border: 2px solid transparent;
-
-            &:hover{
-                background: transparent;
-                border: 2px solid #000000;
-                color: #000000;
-            }
-        }
-    }
 `;
 
-export default BestSeller
+
+export default CompleteLook
+

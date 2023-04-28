@@ -21,6 +21,102 @@ import image8 from "../../images/category-image/plus-size-dresses.png"
 SwiperCor.use([Navigation, A11y]);
 
 const DressCategory = () => {
+    const product = [
+        {
+            image: image1,
+            title: "COCKTAIL"
+        },
+        {
+            image: image2,
+            title: "PROM"
+        },
+        {
+            image: image3,
+            title: "HOMECOMING"
+        },
+        {
+            image: image4,
+            title: "EVENING"
+        },
+        {
+            image: image5,
+            title: "WEDDING"
+        },
+        {
+            image: image6,
+            title: "BRIDESMAID"
+        },
+        {
+            image: image7,
+            title: "PETITE"
+        },
+        {
+            image: image8,
+            title: "PLUS SIZE"
+        },{
+            image: image1,
+            title: "COCKTAIL"
+        },
+        {
+            image: image2,
+            title: "PROM"
+        },
+        {
+            image: image3,
+            title: "HOMECOMING"
+        },
+        {
+            image: image4,
+            title: "EVENING"
+        },
+        {
+            image: image5,
+            title: "WEDDING"
+        },
+        {
+            image: image6,
+            title: "BRIDESMAID"
+        },
+        {
+            image: image7,
+            title: "PETITE"
+        },
+        {
+            image: image8,
+            title: "PLUS SIZE"
+        },{
+            image: image1,
+            title: "COCKTAIL"
+        },
+        {
+            image: image2,
+            title: "PROM"
+        },
+        {
+            image: image3,
+            title: "HOMECOMING"
+        },
+        {
+            image: image4,
+            title: "EVENING"
+        },
+        {
+            image: image5,
+            title: "WEDDING"
+        },
+        {
+            image: image6,
+            title: "BRIDESMAID"
+        },
+        {
+            image: image7,
+            title: "PETITE"
+        },
+        {
+            image: image8,
+            title: "PLUS SIZE"
+        },
+    ]
     return (
         <StyleWrapper>
             <div className='title-wrapper'>
@@ -70,7 +166,17 @@ const DressCategory = () => {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide><CategoryProduct image={image1} title={"COCKTAIL"} /></SwiperSlide>
+                    {
+                        product.map((item, index) => {
+                            return (
+                                <SwiperSlide key={index}><CategoryProduct image={item.image} title={item.title} /></SwiperSlide>
+
+                            )
+                        })
+                    }
+
+
+                    {/* <SwiperSlide><CategoryProduct image={image1} title={"COCKTAIL"} /></SwiperSlide>
                     <SwiperSlide><CategoryProduct image={image2} title={"PROM"} /></SwiperSlide>
                     <SwiperSlide><CategoryProduct image={image3} title={"HOMECOMING"} /></SwiperSlide>
                     <SwiperSlide><CategoryProduct image={image4} title={"EVENING"} /></SwiperSlide>
@@ -101,7 +207,7 @@ const DressCategory = () => {
                     <SwiperSlide><CategoryProduct image={image5} title={"WEDDING"} /></SwiperSlide>
                     <SwiperSlide><CategoryProduct image={image6} title={"BRIDESMAID"} /></SwiperSlide>
                     <SwiperSlide><CategoryProduct image={image7} title={"PETITE"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image8} title={"PLUS SIZE"} /></SwiperSlide>
+                    <SwiperSlide><CategoryProduct image={image8} title={"PLUS SIZE"} /></SwiperSlide> */}
 
                 </Swiper>
             </div>
