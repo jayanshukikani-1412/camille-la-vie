@@ -29,7 +29,8 @@ const PicturePerfectRoom = () => {
 }
 
 const StyleWrapper = styled.section`
-padding: 0 153px 78px;
+/* padding: 0 153px 78px; */
+padding: 0 0px 78px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -60,7 +61,8 @@ align-items: center;
 
 
 @media (max-width: 1140px) {
-    padding: 0 100px 78px;
+    /* padding: 0 100px 78px; */
+    padding: 0 0px 78px;
     .picture-wrapper{
         display: flex;
         flex-direction: column-reverse;
@@ -69,7 +71,8 @@ align-items: center;
     }
 
     @media (max-width: 840px) {
-    padding: 0 50px 78px;
+    /* padding: 0 50px 78px; */
+    padding: 0 0px 78px;
     .picture-wrapper{
         display: flex;
         flex-direction: column-reverse;
@@ -82,7 +85,8 @@ align-items: center;
     }
 
     @media (max-width: 840px) {
-    padding: 0 20px 78px;
+    /* padding: 0 20px 78px; */
+    padding: 0 0px 78px;
     .picture-wrapper{
         display: flex;
         flex-direction: column-reverse;

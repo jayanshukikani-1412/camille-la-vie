@@ -141,18 +141,18 @@ const BestSeller = () => {
                         }
                     }}
                     navigation
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                 >
 
                     {
                         product.map((item, index) => {
                             return (
-                                <SwiperSlide key={index}><BestSellerProduct image={item.image} title={item.title} price={item.price} /> </SwiperSlide>
+                                    <SwiperSlide key={index}><BestSellerProduct image={item.image} title={item.title} price={item.price} /> </SwiperSlide>
                             )
                         })
                     }
-                    
+
                 </Swiper>
             </div>
             <div className='shopAll-btn-wrapper'>
@@ -165,7 +165,8 @@ const BestSeller = () => {
 const StyleWrapper = styled.section`
 margin: 76px 0 0px 0;
 
-padding: 0 40px;
+/* padding: 0 40px; */
+padding: 0 0px;
 
     .title-wrapper{
         text-align: center;

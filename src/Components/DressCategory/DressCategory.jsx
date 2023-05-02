@@ -163,8 +163,8 @@ const DressCategory = () => {
                         },
                     }}
                     navigation
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                 >
                     {
                         product.map((item, index) => {
@@ -175,40 +175,6 @@ const DressCategory = () => {
                         })
                     }
 
-
-                    {/* <SwiperSlide><CategoryProduct image={image1} title={"COCKTAIL"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image2} title={"PROM"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image3} title={"HOMECOMING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image4} title={"EVENING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image5} title={"WEDDING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image6} title={"BRIDESMAID"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image7} title={"PETITE"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image8} title={"PLUS SIZE"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image1} title={"COCKTAIL"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image2} title={"PROM"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image3} title={"HOMECOMING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image4} title={"EVENING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image5} title={"WEDDING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image6} title={"BRIDESMAID"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image7} title={"PETITE"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image8} title={"PLUS SIZE"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image1} title={"COCKTAIL"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image2} title={"PROM"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image3} title={"HOMECOMING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image4} title={"EVENING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image5} title={"WEDDING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image6} title={"BRIDESMAID"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image7} title={"PETITE"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image8} title={"PLUS SIZE"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image1} title={"COCKTAIL"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image2} title={"PROM"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image3} title={"HOMECOMING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image4} title={"EVENING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image5} title={"WEDDING"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image6} title={"BRIDESMAID"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image7} title={"PETITE"} /></SwiperSlide>
-                    <SwiperSlide><CategoryProduct image={image8} title={"PLUS SIZE"} /></SwiperSlide> */}
-
                 </Swiper>
             </div>
         </StyleWrapper>
@@ -218,7 +184,8 @@ const DressCategory = () => {
 const StyleWrapper = styled.section`
 margin :72px 0 76px 0;
 
-padding: 0 40px;
+/* padding: 0 40px; */
+padding: 0 0px;
 
     .title-wrapper{
         text-align: center;
@@ -265,10 +232,12 @@ padding: 0 40px;
 
 
     @media (max-width: 500px) {
-        padding: 0 20px;
+        /* padding: 0 20px; */
+        padding: 0 0px;
     }
 
     @media (max-width: 400px) {
+        /* padding: 0 0px; */
         padding: 0 0px;
     }
 `;

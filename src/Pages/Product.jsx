@@ -21,6 +21,7 @@ const Product = () => {
             <div className='product_wrapper'>
                 <div className='main_image_wrapper'>
                     <div className='left_image_wrapper'>
+                        <button>Model Info</button>
                         <img src={i1} className='side_images' alt="" />
                         <img src={i2} className='side_images' alt="" />
                         <img src={i3} className='side_images' alt="" />
@@ -31,6 +32,7 @@ const Product = () => {
                         <img src={main} className='main_images' alt="" />
                     </div>
                 </div>
+
 
                 <div className='main_product_data_wrapper'>
 
@@ -121,12 +123,12 @@ const Product = () => {
                         <p>May 25 - May 26</p>
                     </div>
 
-                    <TabComponent/>
-                    
+                    <TabComponent />
+
                 </div>
             </div>
 
-            <ReviewSection/>
+            <ReviewSection />
         </ProductStyleWrapper>
     )
 }
@@ -162,12 +164,34 @@ const ProductStyleWrapper = styled.section`
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+
+                button{
+                    background-color: transparent;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    border-bottom: 1px solid #000000;
+                    padding: 4px 16px 5px 16px ;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: #000000;
+                        color: #FFFFFF;
+                    }
+                }
             }
 
             .right_image_wrapper{
-
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
+
+
 
         .main_product_data_wrapper{
             display: flex;
@@ -293,7 +317,6 @@ const ProductStyleWrapper = styled.section`
                 .sizes_title_wrapper{
                     display: flex;
                     justify-content: space-between;
-                    /* gap: 128px; */
                     .size_que_wrapper{
                         display: flex;
                         gap: 20px;
@@ -333,7 +356,7 @@ const ProductStyleWrapper = styled.section`
                     .color_picker_item{
                         width: 30px;
                         height: 30px;
-                        background: ${props => props.background || "#789654"};
+                        background: ${(props) => props.background || "#789654"};
                         border-radius: 50px;
                         padding: 1px;
                     }
@@ -380,6 +403,151 @@ const ProductStyleWrapper = styled.section`
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 16px;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 1440px) {
+    padding: 0 80px;
+
+        .product_wrapper{
+            gap: 40px;
+            .main_product_data_wrapper{
+                .product_title_wrapper{
+                    gap: 50px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1140px) {
+    padding: 0 40px;
+
+        .product_wrapper{
+            gap: 40px;
+            .main_product_data_wrapper{
+                .product_title_wrapper{
+                    gap: 50px;
+                }
+
+                .rating_wrapper{
+                    flex-wrap: wrap;
+                }
+            }
+
+        }
+    }
+
+
+    
+
+
+    @media (max-width: 977px) {
+    /* padding: 0 80px; */
+    padding: 0 40px;
+
+    .product_wrapper{
+            gap: 20px;
+            .main_product_data_wrapper{
+                .product_title_wrapper{
+                    gap: 50px;
+                }
+                .rating_wrapper{
+                    flex-wrap: wrap;
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 940px) {
+    /* padding: 0 80px; */
+    padding: 0 40px;
+
+    .product_wrapper{
+        flex-direction: column;
+        align-items: center;
+            gap: 40px;
+            .main_product_data_wrapper{
+                .product_title_wrapper{
+                    gap: 50px;
+                }
+                .rating_wrapper{
+                    flex-wrap: wrap;
+                }
+                .buy_btn_wrapper{
+
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 600px) {
+    /* padding: 0 40px; */
+    padding: 0 20px;
+        .product_wrapper{
+            .main_image_wrapper{
+                flex-direction: column-reverse;
+                .left_image_wrapper{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 435px) {
+    /* padding: 0 40px; */
+    padding: 0 20px;
+        .product_wrapper{
+            .main_image_wrapper{
+                flex-direction: column-reverse;
+                .left_image_wrapper{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+
+            .main_product_data_wrapper{
+                .product_title_wrapper{
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+
+                .rating_wrapper{
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+
+                .free_wrapper{
+                    flex-wrap: wrap;
+
+                }
+
+                .cut_wrapper{
+                    div{
+                        flex-wrap: wrap;
+                    }
+                }
+
+                .sizes_wrapper{
+                    .size_btn_wrapper{
+                        flex-wrap: wrap;
+                    }
+                }
+
+                .buy_btn_wrapper{
+                    flex-wrap: wrap;
+                    button{
+                        width: 100%;
+                        justify-content: center;
+                    }
+
                 }
             }
         }

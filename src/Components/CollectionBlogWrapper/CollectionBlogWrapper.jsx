@@ -116,8 +116,8 @@ const CollectionBlogWrapper = () => {
                     },
                 }}
                 navigation
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
             >
 
                 {

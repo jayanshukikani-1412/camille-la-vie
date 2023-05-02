@@ -75,6 +75,11 @@ div:last-child{
     }
 }
 
+
+@media (max-width:865px){
+    padding: 0px 20px;
+}
+
 @media (max-width: 768px) {
     div:first-child{
         h1{
@@ -95,10 +100,38 @@ div:last-child{
 
         input{
             border: 2px solid #000000;
-
         }
         button{
             width: 300px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    div:first-child{
+        h1{
+            font-weight: 600;
+            font-size: 24px;
+        }
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 26px;
+            margin: 11px 0 28px 0;
+        }
+    }
+    div:last-child{
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+        input{
+            border: 2px solid #000000;
+            width: 200px;
+
+        }
+        button{
+            width: 200px;
         }
     }
 }

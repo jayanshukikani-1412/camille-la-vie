@@ -5,13 +5,13 @@ import { BiShareAlt } from 'react-icons/bi'
 import { AiOutlineLike } from 'react-icons/ai'
 import { AiOutlineDislike } from 'react-icons/ai'
 
-const ReviewItem = () => {
+const ReviewItem = ({body,email}) => {
     return (
         <StyleItem>
             <div>
                 <div className='customer_title_wrapper'>
                     <div className='customer_name_wrapper'>
-                        <p className='name'>Nadia R.</p>
+                        <p className='name'>{email}</p>
                         <p className='varified hard_text'>Verified Buyer</p>
                     </div>
                     <div className='star_wrapper'>
@@ -34,7 +34,8 @@ const ReviewItem = () => {
                 </div>
 
                 <div className='review_data'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquid, molestiae voluptatibus tempore nostrum illo beatae alias excepturi dolor, voluptate dignissimos totam quis quisquam cupiditate saepe veniam laboriosam maiores eum.</p>
+                <p>{body}</p>
+                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquid, molestiae voluptatibus tempore nostrum illo beatae alias excepturi dolor, voluptate dignissimos totam quis quisquam cupiditate saepe veniam laboriosam maiores eum.</p> */}
                 </div>
 
                 <hr />

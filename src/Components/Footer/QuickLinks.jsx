@@ -20,6 +20,7 @@ const QuickLinks = () => {
 }
 
 const LinkStyleContainer = styled.section`
+width: fit-content;
 
     h3{
         font-weight: 600;

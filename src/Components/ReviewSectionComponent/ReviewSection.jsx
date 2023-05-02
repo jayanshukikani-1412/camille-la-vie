@@ -1,17 +1,47 @@
 import React from 'react'
 import styled from 'styled-components'
-import ReviewItem from './ReviewItem';
+import star from '../../images/product/star.png'
+import {BsPencil} from "react-icons/bs"
+import {BsQuestionCircle} from "react-icons/bs"
+import Pagination from '../Pagianation/Pagination';
 
 const ReviewSection = () => {
   return (
     <StyleWrapper>
-      <div className='review-wrapper'>
-        <ReviewItem/>
-        <ReviewItem/>
-        <ReviewItem/>
-        <ReviewItem/>
+
+      <div className='review_top_wrapper'>
+        <div className='left_wrapper'>
+          <p className='review_num'>4.9</p>
+          <div className='star_wrapper'>
+            <img src={star} className='star_image' alt="" />
+            <img src={star} className='star_image' alt="" />
+            <img src={star} className='star_image' alt="" />
+            <img src={star} className='star_image' alt="" />
+            <img src={star} className='star_image' alt="" />
+          </div>
+          <div className='review_QA'>
+            <p>537 Reviews, 8 Q&As</p>
+          </div>
+        </div>
+
+        <div className='right_wrapper'>
+          <div>
+            <BsPencil className='icons'/>
+            <p> WRITE A REVIEW</p>
+          </div>
+          <div>
+            <BsQuestionCircle className='icons'/>
+            <p> ASK A QUESTION</p>
+          </div>
+        </div>
       </div>
+
+      <div className='review-wrapper'>
+              <Pagination/>
+      </div>
+
     </StyleWrapper>
+
   )
 }
 
@@ -19,10 +49,61 @@ const StyleWrapper = styled.div`
 background-color: #EEEEEE;
 padding: 121px 155px;
 
-.review-wrapper{
+.review_top_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 65px;
+
+  .left_wrapper{
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 18px;
+
+    .review_num{
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+    }
+
+    div.star_wrapper{
+        display: flex;
+        gap: 10px;
+    }
+
+    .review_QA{
+      p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+      }
+
+    }
+  }
+
+  .right_wrapper{
+    display: flex;
+    gap: 55px;
+
+    div{
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      .icons{
+        width: 20px;
+        height: 20px;
+      }
+
+      p{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
 }
+
 `;
 export default ReviewSection

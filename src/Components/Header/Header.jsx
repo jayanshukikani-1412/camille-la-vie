@@ -24,30 +24,46 @@ const Header = () => {
 }
 
 const SectionWrapper = styled.section`
+position: sticky;
+top:28px;
+width: 100%;
+z-index: 10000;
 padding: 10px 155px;
+background-color: white;
+/* padding: 10px 155px; */
+/* padding: 10px 0px; */
 
 .header-top-section{
     display:flex;
     justify-content: space-between;
 }
 
+
+
 @media  (max-width: 1440px){
+    /* padding: 10px 100px; */
     padding: 10px 100px;
 }
 
 @media  (max-width: 1320px){
-    padding: 10px 60px;
-}
-
-@media  (max-width: 1320px){
+    /* padding: 10px 60px; */
     .header-bottom-section{
         display:none
     }
 }
 
-@media  (max-width: 980px){
-        display:none
-}
+
+@media (max-width: 1080px) {
+    /* padding: 0 80px; */
+    padding: 10px 20px;
+    }
+
+
+    @media (max-width: 865px) {
+    /* padding: 0 40px; */
+    padding: 10px 40px;
+    display: none;
+    }
 
 
 

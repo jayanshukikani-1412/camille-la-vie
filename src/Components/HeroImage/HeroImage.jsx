@@ -23,7 +23,8 @@ const HeroImage = () => {
 }
 
 const HeroWrapper = styled.section`
-padding: 0 155px;
+/* padding: 0 155px; */
+padding: 0 0px;
 
 .hero-wrapper{
     position: relative;
@@ -76,7 +77,8 @@ padding: 0 155px;
 }
 
 @media (max-width: 1440px) {
-    padding: 0 100px;
+    /* padding: 0 100px; */
+    padding: 0 0px;
 
     .hero-wrapper{
     position: relative;
@@ -92,7 +94,8 @@ padding: 0 155px;
 }
 
 @media (max-width: 1320px) {
-    padding: 0 100px;
+    /* padding: 0 100px; */
+    padding: 0 0px;
 
     .hero-wrapper{
         position: relative;
@@ -118,6 +121,7 @@ padding: 0 155px;
 
 @media (max-width: 1080px) {
     padding: 0 80px;
+    padding: 0 0px;
 
     .hero-wrapper{
         position: relative;
@@ -142,6 +146,7 @@ padding: 0 155px;
 }
 
 @media (max-width: 865px) {
+    /* padding: 0 0px; */
     padding: 0 0px;
 
     .hero-wrapper{

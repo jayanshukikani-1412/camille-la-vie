@@ -74,19 +74,7 @@ const LinkStyleContainer = styled.section`
 
 
 
-    @media  (max-width: 860px){
-        .payment-container{
-            display: grid;
-            grid-template-columns: auto auto auto;        
-            gap: 10px;
-        }
-        
-        .media-container{
-            display: grid;
-            grid-template-columns: auto auto auto;
-            gap: 20px;
-        }
-}
+
 `;
 
 

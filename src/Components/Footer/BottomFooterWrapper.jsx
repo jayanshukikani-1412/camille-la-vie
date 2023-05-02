@@ -36,10 +36,10 @@ div{
 
     @media  (max-width: 1350px){
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
         padding: 24px 100px;
 
     }

@@ -96,25 +96,13 @@ const PromDressesCollection = () => {
                 })
             }
 
-                {/* <CollectionProduct image={image2} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-                <CollectionProduct image={image3} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-                <CollectionProduct image={image4} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-
-                <CollectionProduct image={image5} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-                <CollectionProduct image={image6} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-                <CollectionProduct image={image7} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-                <CollectionProduct image={image8} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-
-                <CollectionProduct image={image9} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-                <CollectionProduct image={image10} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-                <CollectionProduct image={image11} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" />
-                <CollectionProduct image={image12} title={"Sweetheart Basketweave Sequin Dress"} price="$99.99" /> */}
             </div>
         </StyleWrapper>
     )
 }
 
 const StyleWrapper = styled.section`
+z-index: 99;
     .collection-details{
         display: flex;
         flex-direction: column;

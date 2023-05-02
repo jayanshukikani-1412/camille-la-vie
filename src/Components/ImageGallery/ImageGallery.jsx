@@ -113,37 +113,18 @@ const ImageGallery = () => {
 
                     }}
                     navigation
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                 >
 
                     {
                         array.map((item, index) => {
                             return (
-                                <SwiperSlide><img src={item.image} alt='' /></SwiperSlide>
+                                <SwiperSlide key={index}><img src={item.image} alt='' /></SwiperSlide>
                             )
                         })
                     }
 
-                    {/* <SwiperSlide><img src={image1} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image2} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image3} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image4} alt='' /> </SwiperSlide>
-
-                    <SwiperSlide><img src={image1} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image2} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image3} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image4} alt='' /> </SwiperSlide>
-
-                    <SwiperSlide><img src={image1} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image2} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image3} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image4} alt='' /> </SwiperSlide>
-
-                    <SwiperSlide><img src={image1} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image2} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image3} alt='' /> </SwiperSlide>
-                    <SwiperSlide><img src={image4} alt='' /> </SwiperSlide> */}
 
                 </Swiper>
             </div>
@@ -157,7 +138,8 @@ const ImageGallery = () => {
 const StyleWrapper = styled.section`
 margin: 0 0 0px 0;
 
-padding: 0 155px;
+/* padding: 0 155px; */
+padding: 0 0px;
 
     .title-wrapper{
         text-align: center;
@@ -179,8 +161,8 @@ padding: 0 155px;
         .swiper-wrapper{
             
             img{
-    width: 100%;
-    height: 100%;
+                width: 100%;
+                height: 100%;
 }
 
 
@@ -239,16 +221,19 @@ padding: 0 155px;
     }
 
     @media (max-width: 1440px) {
-    padding: 0 100px;
+    /* padding: 0 100px; */
+    padding: 0 0px;
     }
 
     @media (max-width: 1080px) {
-    padding: 0 80px;
+    /* padding: 0 80px; */
+    padding: 0 0px;
     }
 
 
     @media (max-width: 865px) {
-    padding: 0 40px;
+    /* padding: 0 40px; */
+    padding: 0 0px;
     }
 `;
 

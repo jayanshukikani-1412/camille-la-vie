@@ -1,18 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const BestSellerProduct = ({ image, title, price }) => {
     return (
         <StyleWrapper>
-            <img src={image} alt="" />
-            <p>{title}</p>
-            <p>{price}</p>
+            <Link to={"/products/productid"}>
+                <img src={image} alt="" />
+                <p>{title}</p>
+                <p>{price}</p>
+            </Link>
         </StyleWrapper>
     )
 }
 
 const StyleWrapper = styled.section`
 text-align: center;
+
+a{
+    color: #000000;
+}
 
 img{
     width: 100%;

@@ -14,15 +14,17 @@ const CollectionProduct = ({ image, title, price }) => {
             <div className='image-wrapper'>
                 <img src={image} alt="" />
             </div>
-            <div className='quick-view-btn' onClick={()=> setShowModal(true)}>
-                <button  >QUICK VIEW</button>
-            </div>
-            <div className='quick-view-modal'>
-            {   showModal && <ModalBox closeModal={closeModal}/>    }
-            </div>
+                <div className='quick-view-btn' onClick={() => setShowModal(true)}>
+                    <button>QUICK VIEW</button>
+                </div>
+
             <div className='data-wrapper'>
                 <p>{title}</p>
                 <p>{price}</p>
+            </div>
+
+            <div className='quick-view-modal'>
+                {showModal && <ModalBox closeModal={closeModal} />}
             </div>
         </StyleWrapper>
     )
@@ -77,7 +79,7 @@ z-index: 99;
     border-radius: 3px;
     padding: 20px;
     transition: all 0.5s ease-in-out;
-cursor: pointer;
+    cursor: pointer;
 
     button{
     background-color: transparent;
