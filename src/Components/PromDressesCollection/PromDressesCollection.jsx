@@ -102,7 +102,6 @@ const PromDressesCollection = () => {
 }
 
 const StyleWrapper = styled.section`
-z-index: 99;
     .collection-details{
         display: flex;
         flex-direction: column;
@@ -130,11 +129,17 @@ z-index: 99;
 
     .product-wrapper{
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
         gap: 30px;
     }
 
-    @media (max-width: 1750px) {
+    @media (max-width: 2060px) {
+    .product-wrapper{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 1775px) {
     .product-wrapper{
         grid-template-columns: auto auto auto auto;
     }
@@ -142,30 +147,39 @@ z-index: 99;
 
 @media (max-width: 1440px) {
     .product-wrapper{
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: auto auto auto auto ;
+        gap: 20px;
     }
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1340px) {
     .product-wrapper{
         grid-template-columns: auto auto auto ;
+        gap: 10px;
     }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 930px) {
     .product-wrapper{
-        grid-template-columns: auto auto  ;
+        grid-template-columns: auto auto auto ;
+        gap: 10px;
+
     }
 }
 
-@media (max-width: 865px) {
+
+@media (max-width: 800px) {
     .product-wrapper{
-        grid-template-columns: auto auto  ;
+        grid-template-columns: auto auto ;
+        gap: 20px;
+        justify-content: center;
     }
 }
+
 @media (max-width: 560px) {
     .product-wrapper{
-        grid-template-columns: auto   ;
+        grid-template-columns: auto ;
+        gap: 30px;
         justify-content: center;
     }
 }

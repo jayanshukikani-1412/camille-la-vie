@@ -99,9 +99,13 @@ div:last-child{
         border: none;
 
         input{
+            text-align: center;
             border: 2px solid #000000;
+            padding: 16px 23px;
+
         }
         button{
+            padding: 16px 23px;
             width: 300px;
         }
     }

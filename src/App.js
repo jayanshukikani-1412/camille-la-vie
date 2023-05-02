@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home';
 import Collection from './Pages/Collection';
 import Product from './Pages/Product';
+// import ModalBox from './Components/CollectionProduct/ModalBox';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/products/productid" element={<Product />} />
 
         </Routes>
+
+        {/* <ModalBox/> */}
 
         <Footer />
 

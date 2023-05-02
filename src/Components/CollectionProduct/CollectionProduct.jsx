@@ -42,8 +42,12 @@ z-index: 99;
     .image-wrapper{
         overflow: hidden;
         img{
-        transform: scale(1.08);
-        transition: all 0.5s ease-in-out;
+            width: 100%;
+            height: 100%;
+            min-width: 234px;
+            min-height: 465px;
+            transform: scale(1.08);
+            transition: all 0.5s ease-in-out;
         }
     }
 

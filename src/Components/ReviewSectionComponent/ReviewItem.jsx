@@ -5,7 +5,7 @@ import { BiShareAlt } from 'react-icons/bi'
 import { AiOutlineLike } from 'react-icons/ai'
 import { AiOutlineDislike } from 'react-icons/ai'
 
-const ReviewItem = ({body,email}) => {
+const ReviewItem = ({ body, email }) => {
     return (
         <StyleItem>
             <div>
@@ -25,8 +25,12 @@ const ReviewItem = ({body,email}) => {
 
                 <div className="customer_skin_wrapper">
                     <div className='skin_wrapper'>
-                        <p className='hard_text'>Skin Type:</p> <span>Balanced Dry</span>
-                        <p className='hard_text'>Skin Concerns:</p> <span>Maturing</span>
+                        <div>
+                            <p className='hard_text'>Skin Type:</p> <span>Balanced Dry</span>
+                        </div>
+                        <div>
+                            <p className='hard_text'>Skin Concerns:</p> <span>Maturing</span>
+                        </div>
                     </div>
                     <div>
                         <p>No:</p> <span>03/10/2022</span>
@@ -34,7 +38,7 @@ const ReviewItem = ({body,email}) => {
                 </div>
 
                 <div className='review_data'>
-                <p>{body}</p>
+                    <p>{body}</p>
                     {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquid, molestiae voluptatibus tempore nostrum illo beatae alias excepturi dolor, voluptate dignissimos totam quis quisquam cupiditate saepe veniam laboriosam maiores eum.</p> */}
                 </div>
 
@@ -47,9 +51,9 @@ const ReviewItem = ({body,email}) => {
                     </div>
                     <div className='right_wrapper'>
                         <p className='hard_text'>Was This Review Helpful?  </p>
-                        <div><AiOutlineLike/><span>(5)</span></div>
-                        <div><AiOutlineDislike/><span>(10)</span></div>
-                    </div>  
+                        <div><AiOutlineLike /><span>(5)</span></div>
+                        <div><AiOutlineDislike /><span>(10)</span></div>
+                    </div>
                 </div>
 
 
@@ -168,6 +172,60 @@ hr{
         }
 
     }
+}
+
+
+@media (max-width: 1440px) {
+    padding: 67px 80px;
+}
+
+@media (max-width: 1140px) {
+    padding: 67px 40px;
+}
+
+@media (max-width: 740px) {
+    padding: 50px 40px;
+
+    .customer_title_wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .customer_skin_wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    padding: 20px 20px;
+}
+
+@media (max-width: 500px) {
+    padding: 20px 20px;
+
+    .customer_title_wrapper{
+        .customer_name_wrapper{
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+        }
+    }
+
+    .customer_skin_wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+    }
+
+    .share_wrapper{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
 }
 `;
 export default ReviewItem

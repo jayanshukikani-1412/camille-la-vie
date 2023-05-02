@@ -150,175 +150,173 @@ const ModalStyleWrapper = styled.div`
         line-height: 17px;
     }
 
-                .hard_text{
-                    font-weight: 600;
-                font-size: 12px;
-                line-height: 15px;
-                display: flex;
-                align-items: center;
-}
-
-                .main_image_wrapper{
-                display: flex;
-                gap: 32px;
-                .left_image_wrapper{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-            }
-
-                .main_product_data_wrapper{
-                    display: flex;
-                    flex-direction: column;
-                .subtitle_wrapper{
-                    p{
-                    font-weight: 600;
-                    font-size: 12px;
-                    line-height: 15px;
-                    }
-                }
-
-                .product_title_wrapper{
-                    margin-top: 16px;
-                h2{
-                    font-weight: 500;
-                    font-size: 29px;
-        }
+    .hard_text{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
     }
 
-                .product_price_wrapper{
-                    margin-top: 22px;
+    .main_image_wrapper{
+        display: flex;
+        gap: 32px;
+            .left_image_wrapper{
                 display: flex;
-                align-items: center;
-                gap: 30px;
-
-                .actual_price{
-                    font-weight: 600;
-                font-size: 24px;
-                line-height: 29px;
+                flex-direction: column;
+                gap: 10px;
+            }
         }
 
-                .deleted_price{
-                    font-weight: 400;
+    .main_product_data_wrapper{
+        display: flex;
+        flex-direction: column;
+        
+        .subtitle_wrapper{
+            p{
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+
+        .product_title_wrapper{
+            margin-top: 16px;
+            h2{
+                font-weight: 500;
+                font-size: 29px;
+            }
+        }
+
+        .product_price_wrapper{
+            margin-top: 22px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .actual_price{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            .deleted_price{
+                font-weight: 400;
                 font-size: 24px;
                 line-height: 16px;
                 text-decoration-line: line-through;
                 color: rgba(34, 34, 34, 0.5);
-        }   
-    }
+            }   
+        }
 
-                .free_wrapper{
-                    margin-top: 15px;
-                display: flex;
-                gap: 10px;
-                align-items: center;
+        .free_wrapper{
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
 
-                p{
-                    font-weight: 500;
+            p{
+                font-weight: 500;
                 font-size: 12px;
                 line-height: 15px;
                 display: flex;
                 align-items: center;
+            }
         }
-    }
 
-                .cut_wrapper{
-                    display: flex;
-                align-items: center;
-                gap: 30px;
-                margin-top: 28px;
+        .cut_wrapper{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 28px;
 
-                div{
-                    display: flex;
+            div{
+                display: flex;
                 gap: 10px;
 
                 .cut_btn{
                     background: #ffffff;
-                border: 1px solid #000000;
-                border-radius: 3px;
-                padding: 6px 8px;
-                &:hover{
-                    background: #000000;
-                color: #ffffff;
+                    border: 1px solid #000000;
+                    border-radius: 3px;
+                    padding: 6px 8px;
+                    &:hover{
+                        background: #000000;
+                        color: #ffffff;
+                    }
+                }
             }
-            }
-
         }
-    }
 
-                .sizes_wrapper{
-                    margin-top: 33px;
+        .sizes_wrapper{
+            margin-top: 33px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .sizes_title_wrapper{
                 display: flex;
-                flex-direction: column;
-                gap: 15px;
-
-                .sizes_title_wrapper{
-                    display: flex;
                 gap: 128px;
 
                 .size_que_wrapper{
                     display: flex;
-                gap: 20px;
+                    gap: 20px;
 
-                p{
-                    font-weight: 400;
-                font-size: 12px;
-                line-height: 16px;
+                    p{
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
                 }
             }
-        }
 
-                .size_btn_wrapper{
-                    display: flex;
+            .size_btn_wrapper{
+                display: flex;
                 gap: 15px;
 
                 .size_btn{
                     background: #ffffff;
-                padding: 7px 16px;
-                border: 1px solid #000000;
-                border-radius: 3px;
-                &:hover{
-                    background: #000000;
-                color:#ffffff
+                    padding: 7px 16px;
+                    border: 1px solid #000000;
+                    border-radius: 3px;
+                    &:hover{
+                        background: #000000;
+                        color:#ffffff
+                    }
                 }
             }
         }
 
-        
-    }
+        .color_wrapper{
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+            gap: 26px;
 
-                .color_wrapper{
-                    margin-top: 32px;
+            .color_container{
                 display: flex;
-                align-items: center;
-                gap: 26px;
-
-                .color_container{
-                    display: flex;
                 gap: 12px;
                 .color_picker_item{
                     width: 30px;
-                height: 30px;
-                background: ${props => props.background || "#789654"};
-                border-radius: 50px;
-                padding: 1px;
+                    height: 30px;
+                    background: ${props => props.background || "#789654"};
+                    border-radius: 50px;
+                    padding: 1px;
                 }
             }
-    }
+        }
 
-                .quantity_wrapper{
-                    display: flex;
-                gap: 60px;
-                margin-top: 30px;
-                background: #FFFFFF;
-                border: 1px solid #000000;
-                border-radius: 5px;
-                padding: 21px;
-                width: fit-content;
+        .quantity_wrapper{
+            display: flex;
+            gap: 60px;
+            margin-top: 30px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 21px;
+            width: fit-content;
 
-                button{
-                    background-color: transparent;
+            button{
+                background-color: transparent;
                 width: 9.75px;
                 height: 9.75px;
                 font-size: 20px;
@@ -327,24 +325,24 @@ const ModalStyleWrapper = styled.div`
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
                 cursor: pointer;
-        }
-                span{
-                    font-size: 20px;
+            }
+            span{
+                font-size: 20px;
                 font-weight: 600;
                 font-size: 20px;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
+            }
         }
-    }
 
-                .buy_btn_wrapper{
-                    display: flex;
-                align-items: center;
-                margin-top: 26px;
-                gap: 26px;
+        .buy_btn_wrapper{
+            display: flex;
+            align-items: center;
+            margin-top: 26px;
+            gap: 26px;
 
-                button{
-                    padding: 23px 56px;
+            button{
+                padding: 23px 56px;
                 background-color: #ffffff;
                 border: 1px solid #000000;
                 border-radius: 3px;
@@ -353,44 +351,42 @@ const ModalStyleWrapper = styled.div`
 
                 &:hover{
                     background-color: #000000;
-                color: #ffffff;
+                    color: #ffffff;
+                }
             }
-        }
 
-                .add_to_cart_btn{
-                    background-color: #000000;
+            .add_to_cart_btn{
+                background-color: #000000;
                 color: #FFFFFF;
-
                 &:hover{
                     background-color: #ffffff;
-                color: #000000;
+                    color: #000000;
+                }
             }
         }
-    }
 
-                .delivery_wrapper{
-                    display: flex;
-                align-items: center;
-                gap: 12px;
-                margin-top: 33px;
+        .delivery_wrapper{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 33px;
 
-                p:last-child{
-                    font-weight: 400;
+            p:last-child{
+                font-weight: 400;
                 font-size: 14px;
                 line-height: 16px;
             }
         }
-}
-
-                .close_btn_wrapper{
-                    position: absolute;
-                top: -15px;
-                right: -15px;
-                font-size: 33px;
-                cursor: pointer;
-}
-
     }
+
+    .close_btn_wrapper{
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        font-size: 33px;
+        cursor: pointer;
+    }
+  }
 }
 `;
 

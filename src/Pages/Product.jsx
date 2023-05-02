@@ -33,6 +33,39 @@ const Product = () => {
                     </div>
                 </div>
 
+                {/* <div className='modal_info_wrapper'>
+                    <div className='info_top_wrapper'>
+                        <h3>MODAL INFO</h3>
+                        <p>MEET LUDI</p>
+                    </div>
+                    <hr />
+                    <div className='info_middle_wrapper'>
+                        <span>Ludi's Info</span>
+                        <div className='modal_info_section'>
+                            <div>
+                                <p>Hips</p>
+                                <span>34"</span>
+                            </div>
+                            <div>
+                                <p>Waist</p>
+                                <span>24"</span>
+                            </div>
+                            <div>
+                                <p>Height</p>
+                                <span>5'9"</span>
+                            </div>
+                            <div>
+                                <p>Bust</p>
+                                <span>32"</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className='info_bottom_wrapper'>
+                        <h3>HERE SHE'S WEARING A SIZE S</h3>
+                    </div>
+                </div> */}
+
 
                 <div className='main_product_data_wrapper'>
 
@@ -161,6 +194,7 @@ const ProductStyleWrapper = styled.section`
             gap: 52px;
 
             .left_image_wrapper{
+
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -190,6 +224,41 @@ const ProductStyleWrapper = styled.section`
                 }
             }
         }
+
+        /* .modal_info_wrapper{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000000;
+            color: #FFFFFF;
+            width: fit-content;
+            height: fit-content;
+            padding: 38px 46px;
+
+            .info_top_wrapper{
+                display: flex;
+                justify-content: space-between;
+            }
+            hr{
+                border-top: 1px solid #FFFFFF;
+                margin: 17px 0 24px 0;
+            }
+
+            .info_middle_wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                .modal_info_section{
+                    width: fit-content;
+                    div{
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 21px;
+                    }
+                }
+            }
+
+        } */
 
 
 
@@ -410,9 +479,9 @@ const ProductStyleWrapper = styled.section`
 
 
     @media (max-width: 1440px) {
-    padding: 0 80px;
 
         .product_wrapper{
+            padding: 0 80px;
             gap: 40px;
             .main_product_data_wrapper{
                 .product_title_wrapper{
@@ -423,10 +492,11 @@ const ProductStyleWrapper = styled.section`
     }
 
     @media (max-width: 1140px) {
-    padding: 0 40px;
 
         .product_wrapper{
             gap: 40px;
+            padding: 0 40px;
+
             .main_product_data_wrapper{
                 .product_title_wrapper{
                     gap: 50px;
@@ -446,10 +516,11 @@ const ProductStyleWrapper = styled.section`
 
     @media (max-width: 977px) {
     /* padding: 0 80px; */
-    padding: 0 40px;
 
     .product_wrapper{
             gap: 20px;
+            padding: 0 40px;
+
             .main_product_data_wrapper{
                 .product_title_wrapper{
                     gap: 50px;
@@ -464,9 +535,10 @@ const ProductStyleWrapper = styled.section`
 
     @media (max-width: 940px) {
     /* padding: 0 80px; */
-    padding: 0 40px;
 
     .product_wrapper{
+        padding: 0 40px;
+
         flex-direction: column;
         align-items: center;
             gap: 40px;
@@ -487,8 +559,9 @@ const ProductStyleWrapper = styled.section`
 
     @media (max-width: 600px) {
     /* padding: 0 40px; */
-    padding: 0 20px;
         .product_wrapper{
+            padding: 0 20px;
+
             .main_image_wrapper{
                 flex-direction: column-reverse;
                 .left_image_wrapper{
@@ -502,8 +575,9 @@ const ProductStyleWrapper = styled.section`
     
     @media (max-width: 435px) {
     /* padding: 0 40px; */
-    padding: 0 20px;
         .product_wrapper{
+            padding: 0 20px;
+
             .main_image_wrapper{
                 flex-direction: column-reverse;
                 .left_image_wrapper{

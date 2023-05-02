@@ -89,7 +89,12 @@ const PaginationStyleWrapper = styled.section`
     cursor: pointer;
     background-color: white;
     color: #000000;
-    padding: 15px 18px;
+    padding: 15px 0px;
+
+}
+
+.page_wrapper_link{
+    padding: 0 18px;
 }
 .active{
     background-color: #000000;
@@ -101,6 +106,9 @@ const PaginationStyleWrapper = styled.section`
     flex-direction: column;
     gap: 30px;
 }
+
+
+
 
 `;
 

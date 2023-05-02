@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import star from '../../images/product/star.png'
-import {BsPencil} from "react-icons/bs"
-import {BsQuestionCircle} from "react-icons/bs"
+import { BsPencil } from "react-icons/bs"
+import { BsQuestionCircle } from "react-icons/bs"
 import Pagination from '../Pagianation/Pagination';
 
 const ReviewSection = () => {
@@ -26,18 +26,18 @@ const ReviewSection = () => {
 
         <div className='right_wrapper'>
           <div>
-            <BsPencil className='icons'/>
+            <BsPencil className='icons' />
             <p> WRITE A REVIEW</p>
           </div>
           <div>
-            <BsQuestionCircle className='icons'/>
+            <BsQuestionCircle className='icons' />
             <p> ASK A QUESTION</p>
           </div>
         </div>
       </div>
 
       <div className='review-wrapper'>
-              <Pagination/>
+        <Pagination />
       </div>
 
     </StyleWrapper>
@@ -103,6 +103,46 @@ padding: 121px 155px;
     }
   }
 
+}
+
+@media (max-width: 1440px) {
+    padding: 121px 80px;
+}
+
+@media (max-width: 1140px) {
+  padding: 121px 40px;}
+
+@media (max-width: 900px) {
+  padding: 121px 40px;
+
+  .review_top_wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  padding: 121px 20px;}
+
+  @media (max-width: 500px) {
+  padding: 121px 20px;
+  
+  .review_top_wrapper{
+    gap: 20px;
+    .left_wrapper{
+      flex-wrap: wrap;
+          justify-content: center;
+
+      gap: 10px;
+    }
+    .right_wrapper{
+      flex-wrap: wrap;
+          justify-content: center;
+
+      gap: 10px;
+    }
+  }
 }
 
 `;
